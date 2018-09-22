@@ -1,0 +1,203 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.censys.io/api/v1/search/ipv4
+    body:
+      encoding: UTF-8
+      string: '{"query":"\"deepMiner.min.js\" AND location.country_code: US"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.censys.io
+      Authorization:
+      - "<CENSORED>"
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cloud-Trace-Context:
+      - 674ba575b1f90b009e8d8d718c988c22
+      Date:
+      - Sat, 22 Sep 2018 08:50:23 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '8301'
+    body:
+      encoding: UTF-8
+      string: '{"status": "ok", "results": [{"location.country": "United States",
+        "location.registered_country": "United States", "location.longitude": -81.326,
+        "location.city": "Kent", "ip": "148.59.137.27", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 41.1352, "location.province":
+        "Ohio", "location.continent": "North America", "location.postal_code": "44240",
+        "protocols": ["80/http"], "location.timezone": "America/New_York"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -98.3652, "location.city": "San Antonio", "ip": "207.71.5.167", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 29.5559, "location.province":
+        "Texas", "location.continent": "North America", "location.postal_code": "78233",
+        "protocols": ["80/http", "443/https", "8080/http"], "location.timezone": "America/Chicago"},
+        {"location.country": "United States", "location.registered_country": "United
+        States", "location.longitude": -77.7138, "location.city": "Rochester", "ip":
+        "23.92.217.120", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 43.173, "location.province": "New York", "location.continent":
+        "North America", "location.postal_code": "14606", "protocols": ["80/http",
+        "443/https", "8080/http"], "location.timezone": "America/New_York"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -77.2497, "location.continent": "North America", "ip": "35.193.203.101", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.province": "Virginia", "location.latitude":
+        38.6582, "protocols": ["80/http", "443/https", "22/ssh"], "location.timezone":
+        "America/New_York"}, {"location.country": "United States", "location.registered_country":
+        "United States", "location.longitude": -83.0235, "location.city": "Columbus",
+        "ip": "18.219.42.53", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 39.9653, "location.province": "Ohio", "location.continent":
+        "North America", "location.postal_code": "43215", "protocols": ["80/http"],
+        "location.timezone": "America/New_York"}, {"location.country": "United States",
+        "location.registered_country": "United States", "location.longitude": -83.0235,
+        "location.city": "Columbus", "ip": "18.218.21.245", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 39.9653, "location.province":
+        "Ohio", "location.continent": "North America", "location.postal_code": "43215",
+        "protocols": ["22/ssh", "8080/http"], "location.timezone": "America/New_York"},
+        {"location.country": "United States", "location.registered_country": "United
+        States", "location.longitude": -98.3987, "location.city": "San Antonio", "ip":
+        "166.78.135.164", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 29.4889, "location.province": "Texas", "location.continent":
+        "North America", "location.postal_code": "78218", "protocols": ["80/http",
+        "3306/mysql", "22/ssh"], "location.timezone": "America/Chicago"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -77.2497, "location.continent": "North America", "ip": "104.197.12.57", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.province": "Virginia", "location.latitude":
+        38.6582, "protocols": ["80/http", "443/https", "22/ssh"], "location.timezone":
+        "America/New_York"}, {"location.country": "United States", "location.registered_country":
+        "United States", "location.longitude": -98.3652, "location.city": "San Antonio",
+        "ip": "207.71.5.173", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 29.5559, "location.province": "Texas", "location.continent":
+        "North America", "location.postal_code": "78233", "protocols": ["80/http",
+        "443/https"], "location.timezone": "America/Chicago"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -111.8906, "location.city": "Scottsdale", "ip": "192.169.234.142", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 33.6119, "location.province":
+        "Arizona", "location.continent": "North America", "location.postal_code":
+        "85260", "protocols": ["80/http", "3306/mysql", "993/imaps", "995/pop3s",
+        "25/smtp", "110/pop3", "21/ftp", "143/imap", "53/dns", "587/smtp", "443/https",
+        "22/ssh"], "location.timezone": "America/Phoenix"}, {"location.country": "United
+        States", "location.registered_country": "United States", "location.longitude":
+        -119.688, "location.city": "Boardman", "ip": "54.218.0.119", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 45.8696, "location.province":
+        "Oregon", "location.continent": "North America", "location.postal_code": "97818",
+        "protocols": ["80/http", "25/smtp", "993/imaps", "143/imap", "22/ssh", "443/https",
+        "587/smtp"], "location.timezone": "America/Los_Angeles"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -74.0052, "location.city": "New York", "ip": "192.241.181.229", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 40.7214, "location.province":
+        "New York", "location.continent": "North America", "location.postal_code":
+        "10013", "protocols": ["80/http", "22/ssh"], "location.timezone": "America/New_York"},
+        {"location.country": "United States", "location.registered_country": "United
+        States", "location.longitude": -84.2304, "location.city": "Norcross", "ip":
+        "69.89.12.81", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 33.9681, "location.province": "Georgia", "location.continent":
+        "North America", "location.postal_code": "30092", "protocols": ["80/http",
+        "3306/mysql", "8080/http", "25/smtp", "110/pop3", "21/ftp", "143/imap", "53/dns",
+        "22/ssh", "587/smtp"], "location.timezone": "America/New_York"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -119.688, "location.city": "Boardman", "ip": "52.25.101.209", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 45.8696, "location.province":
+        "Oregon", "location.continent": "North America", "location.postal_code": "97818",
+        "protocols": ["80/http", "22/ssh", "8080/http"], "location.timezone": "America/Los_Angeles"},
+        {"location.country": "United States", "location.registered_country": "United
+        States", "location.longitude": -74.0052, "location.city": "New York", "ip":
+        "159.203.187.176", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 40.7214, "location.province": "New York", "location.continent":
+        "North America", "location.postal_code": "10013", "protocols": ["80/http",
+        "22/ssh", "8080/http"], "location.timezone": "America/New_York"}, {"location.country":
+        "United States", "location.registered_country": "United States", "location.longitude":
+        -87.6272, "location.city": "Chicago", "ip": "50.31.138.161", "location.registered_country_code":
+        "US", "location.country_code": "US", "location.latitude": 41.8776, "location.province":
+        "Illinois", "location.continent": "North America", "location.postal_code":
+        "60604", "protocols": ["80/http", "8080/http", "993/imaps", "995/pop3s", "110/pop3",
+        "53/dns", "443/https", "587/smtp", "5432/postgres"], "location.timezone":
+        "America/Chicago"}, {"location.country": "United States", "location.registered_country":
+        "United States", "location.longitude": -73.481, "location.city": "Darien",
+        "ip": "104.131.103.146", "location.registered_country_code": "US", "location.country_code":
+        "US", "location.latitude": 41.0753, "location.province": "Connecticut", "location.continent":
+        "North America", "location.postal_code": "06820", "protocols": ["80/http",
+        "3306/mysql", "995/pop3s", "25/smtp", "993/imaps", "22/ssh", "443/https",
+        "587/smtp"], "location.timezone": "America/New_York"}], "metadata": {"count":
+        17, "query": "\"deepMiner.min.js\" AND location.country_code: US", "backend_time":
+        77, "page": 1, "pages": 1}}'
+    http_version: 
+  recorded_at: Sat, 22 Sep 2018 08:50:21 GMT
+- request:
+    method: post
+    uri: "<CENSORED>"
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%22channel%22%3A%22%23general%22%2C%22text%22%3A%22Query%3A+%5C%22deepMiner.min.js%5C%22+AND+location.country_code%3A+US%5Cn148.59.137.27%5Cn207.71.5.167%5Cn23.92.217.120%5Cn35.193.203.101%5Cn18.219.42.53%5Cn18.218.21.245%5Cn166.78.135.164%5Cn104.197.12.57%5Cn207.71.5.173%5Cn192.169.234.142%5Cn54.218.0.119%5Cn192.241.181.229%5Cn69.89.12.81%5Cn52.25.101.209%5Cn159.203.187.176%5Cn50.31.138.161%5Cn104.131.103.146%22%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Date:
+      - Sat, 22 Sep 2018 08:50:24 GMT
+      Server:
+      - Apache
+      X-Slack-Exp:
+      - '1'
+      X-Slack-Backend:
+      - h
+      X-Slack-Router:
+      - p
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-928b
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f3d34762a17138affa7e1595de182cfc.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - hW5-0gXjS1jStVedv4sOrT1UJrbuu5xfXq6cNiAWMzNE3F7izzQgGg==
+    body:
+      encoding: ASCII-8BIT
+      string: ok
+    http_version: 
+  recorded_at: Sat, 22 Sep 2018 08:50:21 GMT
+recorded_with: VCR 4.0.0
